@@ -32,3 +32,6 @@ $mkdir -p A/{B/{D/{I/M/J,J/L/Z},E/H/L/Z},C/{F/H/L/Z,G/K/L/Z}}
 ![Output](Images/Two3.png)
 
 ![Output](Images/Two4.png)
+
+
+## 3. User Data Copy
