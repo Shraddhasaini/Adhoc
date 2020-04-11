@@ -43,3 +43,10 @@ $ sudo cp /home/b/dir001 /home/shraddha/Adhoc
 ![Output](Images/Three1.png)
 ![Output](Images/Three2.png)
 ![Output](Images/Three3.png)
+
+
+## 4. Run cal command for 10 secs store output in a file
+
+### Command:
+
+$ 
