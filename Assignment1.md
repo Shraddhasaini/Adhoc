@@ -23,7 +23,7 @@ $ mkdir -p A/{B/{D/{I/M/J,J/L/Z},E/H/L/Z},C/{F/H/L/Z,G/K/L/Z}}
 * $ sudo su
 * $ chown Adhoc date
 * $ chmod 700 date
-* $ chmod -rwx /bin/ ------> For removing permisiion for all other commands
+* $ chmod -rwx /bin/ ------> For removing permission for all other commands
 
 ![Output](Images/Two1.png)
 
