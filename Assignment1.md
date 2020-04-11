@@ -41,7 +41,9 @@ $ mkdir -p A/{B/{D/{I/M/J,J/L/Z},E/H/L/Z},C/{F/H/L/Z,G/K/L/Z}}
 $ sudo cp /home/b/dir001 /home/shraddha/Adhoc
 
 ![Output](Images/Three1.png)
+
 ![Output](Images/Three2.png)
+
 ![Output](Images/Three3.png)
 
 
@@ -49,4 +51,7 @@ $ sudo cp /home/b/dir001 /home/shraddha/Adhoc
 
 ### Command:
 
-$ 
+$ cal >> /tmp/a.txt & sleep 10
+
+![Output](Images/Four.png)
+
