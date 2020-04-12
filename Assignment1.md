@@ -8,7 +8,7 @@
 
 * $ mkdir -p A/{B/{D/{I/M/J,J/L/Z},E/H/L/Z},C/{F/H/L/Z,G/K/L/Z}}
 * $ find . 
-or
+(or)
 * $ tree A
 
 ![Output](Images/One.png)
@@ -41,7 +41,11 @@ or
 
 ### Command:
 
-$ sudo cp /home/b/dir001 /home/shraddha/Adhoc
+* $ adduser b
+* $ su b
+* $ mkdir dir001
+* $ su shraddha
+* $ sudo cp /home/b/dir001 /home/shraddha/Adhoc
 
 ![Output](Images/Three1.png)
 
