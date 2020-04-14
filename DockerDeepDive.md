@@ -67,7 +67,7 @@ done
 ## 2. Container Operations
 >> From the above task
 >
-> Write a combination of docker and OS commands to get the list of name, created of all containers and store them in a text file
+> Write a combination of *docker and OS commands* to get the list of **name, created** of all containers and store them in a text file
 >
 
 ### :atom: Commands:
@@ -81,15 +81,15 @@ $cat list.txt
 ![Output](Images/DD2.1.png)
 
 ## 3. Container GUI
->Run a container from custom docker image
+>Run a container from **your** custom docker image
 >
->> The parent process must be firefox
+>> The parent process must be *firefox*
 >
 
 ## 4. Consumption:
 >> From task one
 >
-> Get RAM and CPU consumptions of the 100 containers and stores in a file
+> Get **RAM and CPU consumptions** of the *100 containers* and stores in a file
 
 ### :atom: Commands:
 
