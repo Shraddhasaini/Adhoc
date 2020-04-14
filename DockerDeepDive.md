@@ -13,3 +13,18 @@
 >> You can assume anything as a parent process.
 >
 
+  ### Commands:
+
+```
+$sudo su
+$docker pull alpine
+$docker pull fedora
+$docker pull centos
+$docker pull java
+$docker images
+$touch hundred.sh
+$chmod +x hundred.sh
+$./hundred.sh
+$docker ps
+```
+
