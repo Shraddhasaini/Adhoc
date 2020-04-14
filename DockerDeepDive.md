@@ -1,7 +1,7 @@
 # Docker Deep Dive Task 1 :whale:
 ------
 [Youtube Video for this task](https://www.youtube.com/watch?v=oxxAqV1p1Ew)
-## 1. Multiple Containers
+## :one: Multiple Containers
 > Write Python code to create **100 Containers**. / bash script.
 >
 > Each **25 Container** will be from *Alpine, Fedora, centos* and *Java* image.
@@ -64,7 +64,7 @@ done
 ![Output](Images/DD1.4.png)
 ![Output](Images/DD1.5.png)
 
-## 2. Container Operations
+## :two: Container Operations
 >> From the above task
 >
 > Write a combination of *docker and OS commands* to get the list of **name, created** of all containers and store them in a text file
@@ -80,13 +80,13 @@ $cat list.txt
 
 ![Output](Images/DD2.1.png)
 
-## 3. Container GUI
+## :three: Container GUI
 >Run a container from **your** custom docker image
 >
 >> The parent process must be *firefox*
 >
 
-## 4. Consumption:
+## :four: Consumption:
 >> From task one
 >
 > Get **RAM and CPU consumptions** of the *100 containers* and stores in a file
