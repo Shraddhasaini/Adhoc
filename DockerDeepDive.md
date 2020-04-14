@@ -17,15 +17,16 @@
 
 ```
 $sudo su
+$cd /home/shraddha/adhoc/dir001
 $docker pull alpine
 $docker pull fedora
 $docker pull centos
 $docker pull java
 $docker images
-$touch hundred.sh
-$atom hundred.sh 
-$chmod +x hundred.sh
-$./hundred.sh
+$touch shraddha.sh
+$atom shraddha.sh 
+$chmod +x shraddha.sh
+$./shraddha.sh
 $docker ps
 ```
 ### :spiral_notepad: Shell Script:
@@ -34,6 +35,7 @@ $docker ps
 
 ```shell
 #!/bin/bash
+#
 
 for i in {1..25}
     do docker run --restart=always --name adhocnw$i -P -d alpine
