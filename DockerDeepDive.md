@@ -79,3 +79,14 @@ $cat list.txt
 ### :bulb: Output:
 
 ![Output](Images/DD2.1.png)
+
+## 3. Container GUI
+>Run a container from custom docker image
+>
+>> The parent process must be firefox
+>
+
+## 4. Consumption:
+>> From task one
+>
+> Get RAM and CPU consumptions of the 100 containers and stores in a file
