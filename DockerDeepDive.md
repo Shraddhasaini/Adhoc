@@ -17,21 +17,25 @@
 
 ```
 $sudo su
+$cd /home/shraddha/adhoc/dir001
 $docker pull alpine
 $docker pull fedora
 $docker pull centos
 $docker pull java
 $docker images
-$touch hundred.sh
-$atom hundred.sh 
-$chmod +x hundred.sh
-$./hundred.sh
+$touch shraddha.sh
+$atom shraddha.sh 
+$chmod +x shraddha.sh
+$./shraddha.sh
 $docker ps
 ```
 ### :spiral_notepad: Shell Script:
 
+[The Shell script to create 100 containers](https://github.com/Shraddhasaini/Adhoc/blob/master/src/hundred.sh)
+
 ```shell
 #!/bin/bash
+#
 
 for i in {1..25}
     do docker run --restart=always --name adhocnw$i -P -d alpine
@@ -53,5 +57,17 @@ for i in {76..100}
     sleep 3
 done
 ```
-### :bulb: Output:
+### :bulb: Outputs:
+![Output](Images/DD1.1.png)
+![Output](Images/DD1.2.png)
+![Output](Images/DD1.3.png)
+![Output](Images/DD1.4.png)
+![Output](Images/DD1.5.png)
+
+## 2. Container Operations
+>> From the above task
+>
+> Write a combination of docker and OS commands to get the list of name, created of all containers and store them in a text file
+>
+
 
