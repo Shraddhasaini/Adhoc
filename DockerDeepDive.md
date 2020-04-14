@@ -1,6 +1,6 @@
 # Docker Deep Dive Task 1 :whale:
 ------
-
+[Youtube Video for this task](https://www.youtube.com/watch?v=oxxAqV1p1Ew)
 ## 1. Multiple Containers
 > Write Python code to create **100 Containers**. / bash script.
 >
