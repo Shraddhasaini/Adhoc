@@ -90,3 +90,32 @@ $cat list.txt
 >> From task one
 >
 > Get RAM and CPU consumptions of the 100 containers and stores in a file
+
+### :atom: Commands:
+
+```
+$touch stat.sh
+$atom stat.sh
+$chmod +x stat.sh
+$./stat.sh
+```
+### :spiral_notepad: Shell Script:
+[The Shell script to store cpu consumption](https://github.com/Shraddhasaini/Adhoc/blob/master/src/stat.sh)
+```shell
+#!/bin/bash
+
+for i in {1..100}
+do
+  docker stats adhocnw$i >> cpu.txt
+done
+```
+
+### :bulb: Output:
+
+```golang
+CONTAINER           CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O
+adhocnw1              0.07%               796 KB / 64 MB        1.21%               788 B / 648 B       3.568 MB / 512 KB
+.
+.
+adhocnw100              0.07%               2.746 MB / 64 MB      4.29%               1.266 KB / 648 B    12.4 MB / 0 B
+```
