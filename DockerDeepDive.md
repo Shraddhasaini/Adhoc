@@ -30,6 +30,8 @@ $docker ps
 ```
 ### :spiral_notepad: Shell Script:
 
+[The Shell script to create 100 containers](https://github.com/Shraddhasaini/Adhoc/blob/master/src/hundred.sh)
+
 ```shell
 #!/bin/bash
 
@@ -53,5 +55,9 @@ for i in {76..100}
     sleep 3
 done
 ```
-### :bulb: Output:
-
+### :bulb: Outputs:
+![Output](Images/DD1.1.png)
+![Output](Images/DD1.2.png)
+![Output](Images/DD1.3.png)
+![Output](Images/DD1.4.png)
+![Output](Images/DD1.5.png)
