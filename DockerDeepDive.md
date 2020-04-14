@@ -13,7 +13,7 @@
 >> You can assume anything as a parent process.
 >
 
-### Commands:
+### :atom: Commands:
 
 ```
 $sudo su
@@ -23,11 +23,12 @@ $docker pull centos
 $docker pull java
 $docker images
 $touch hundred.sh
+$atom hundred.sh 
 $chmod +x hundred.sh
 $./hundred.sh
 $docker ps
 ```
-### Shell Script:
+### :spiral_notepad: Shell Script:
 
 ```shell
 #!/bin/bash
@@ -52,3 +53,5 @@ for i in {76..100}
     sleep 3
 done
 ```
+### :bulb: Output:
+
