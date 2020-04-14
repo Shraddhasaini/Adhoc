@@ -63,3 +63,11 @@ done
 ![Output](Images/DD1.3.png)
 ![Output](Images/DD1.4.png)
 ![Output](Images/DD1.5.png)
+
+## 2. Container Operations
+>> From the above task
+>
+> Write a combination of docker and OS commands to get the list of name, created of all containers and store them in a text file
+>
+
+
