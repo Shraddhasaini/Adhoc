@@ -70,4 +70,12 @@ done
 > Write a combination of docker and OS commands to get the list of name, created of all containers and store them in a text file
 >
 
+### :atom: Commands:
 
+```shell
+$docker ps -a | awk '{print $2 , $4 $5 $6 , $12 $13 }' > list.txt
+$cat list.txt
+```
+### :bulb: Output:
+
+![Output](Images/DD2.1.png)
