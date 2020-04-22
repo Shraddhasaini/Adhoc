@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  sainiwebapp1:
+    image: dockerashu/ckad:v2
+    container_name: sainicccc
+    ports:
+      - "11118:80"

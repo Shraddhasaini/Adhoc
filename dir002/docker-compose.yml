@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+  sainiapp1:
+    image: alpine
+    container_name: sainic11
+    command: ping fb.com
+
+  sainiapp2:
+    image: alpine
+    container_name: sainic22
+    command: ping google.com
