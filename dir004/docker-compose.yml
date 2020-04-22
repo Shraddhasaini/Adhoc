@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  app1:
+    image: shraddha:day12v1
+    build: . #loc of dockerfile
+    container_name: shraddhaday12c1 #optional
+    ports:
+      - "9981:80"
