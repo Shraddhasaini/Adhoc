@@ -6,3 +6,13 @@ services:
     container_name: shraddhaday12c1 #optional
     ports:
       - "9981:80"
+    networks:
+      - shraddhabr111 #want ot use this , but not present as of now
+    volumes:
+      - shraddhavol12:/mnt/google
+
+networks:
+  shraddhabr111: #will create a new docker network
+
+volumes:
+  shraddhavol12: 
