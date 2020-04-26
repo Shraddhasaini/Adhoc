@@ -85,9 +85,10 @@ DATABASES = {
 }
 ...
 ```
-#### Fire it up :
+#### Fire it up and Migrate the database:
 ```shell
 $ docker-compose build
 $ docker-compose up -d
+$ docker-compose run web python manage.py migrate
 ```
 
