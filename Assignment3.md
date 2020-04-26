@@ -9,3 +9,4 @@ $ mkdir django_signup
 $ cd django_signup
 
 ```
+>>>>>>>>Create a sample Django-signup page
