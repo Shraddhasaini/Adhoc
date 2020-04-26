@@ -9,7 +9,7 @@ $ mkdir django_signup
 $ cd django_signup
 
 ```
->>>>>>>>Create a sample Django-signup page
+>>>>>>>>>>>[Create a sample Django-signup page](https://github.com/Shraddhasaini/Django_Adhoc)
 
 #### Prerequisites
 * Installed Docker
