@@ -4,4 +4,8 @@
 > To Dockerize a Django signup page with database
 
 ### Creating a Django sign-up application:
+```shell
+$ mkdir django_signup
+$ cd django_signup
 
+```
