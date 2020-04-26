@@ -85,3 +85,9 @@ DATABASES = {
 }
 ...
 ```
+#### Fire it up :
+```shell
+$ docker-compose build
+$ docker-compose up -d
+```
+
