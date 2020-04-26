@@ -70,3 +70,18 @@ six==1.10.0
 mysqlclient==1.3.12
 django-mysql==2.2.0
 ```
+#### /settings.py
+```python
+...
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'my-app-db',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'db',
+        'PORT': 3306,
+    }
+}
+...
+```
