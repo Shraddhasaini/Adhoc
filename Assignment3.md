@@ -11,21 +11,21 @@ $ cd django_signup
 ```
 >>>>>>>>>>>[Create a sample Django-signup page](https://github.com/Shraddhasaini/Django_Adhoc)
 
-#### Prerequisites
+#### :cyclone: Prerequisites
 * Installed Docker
 
 * Installed docker-compose
 
 * Your Django application code
 
-#### Desired Specs
+#### :cyclone: Desired Specs
 * Python 3.6
 
 * MySQL 5.7 (or 5.X)
 
 * docker compose version 3
 
-#### Dockerfile
+#### :snowflake: Dockerfile
 ```text
 FROM python:3.6
 ENV PYTHONUNBUFFERED 1
@@ -35,7 +35,7 @@ ADD requirements.txt /my_app_dir/
 RUN pip install -r requirements.txt
 ADD . /my_app_dir/
 ```
-#### docker-compose.yml
+#### :snowflake: docker-compose.yml
 ```yaml
 version: '3'
 
@@ -60,7 +60,7 @@ services:
       - db
 ```
 
-#### requirements.txt
+#### :snowflake: requirements.txt
 ```
 appdirs==1.4.0
 Django==1.10.5
@@ -70,7 +70,7 @@ six==1.10.0
 mysqlclient==1.3.12
 django-mysql==2.2.0
 ```
-#### /settings.py
+#### :snowflake: /settings.py
 ```python
 ...
 DATABASES = {
