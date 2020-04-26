@@ -35,3 +35,38 @@ ADD requirements.txt /my_app_dir/
 RUN pip install — upgrade pip && pip install -r requirements.txt
 ADD . /my_app_dir/
 ```
+#### docker-compose.yml
+```yaml
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    ports:
+      - '3306:3306'
+    environment:
+       MYSQL_DATABASE: 'my-app-db'
+       MYSQL_USER: 'root'
+       MYSQL_PASSWORD: 'password'
+       MYSQL_ROOT_PASSWORD: 'password'
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/my_app_dir
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+```
+
+#### requirements.txt
+```
+appdirs==1.4.0
+Django==1.10.5
+packaging==16.8
+pyparsing==2.1.10
+six==1.10.0
+mysqlclient==1.3.12
+django-mysql==2.2.0
+```
