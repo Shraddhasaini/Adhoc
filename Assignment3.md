@@ -93,18 +93,15 @@ $ docker-compose run web python manage.py migrate
 ```
 ----------------------
 ## :two: TASK #2: 
->To Build A Docker Container That Runs Parent Docker Engine As The Container Docker Engine
+>To Build A Docker Container That Executes Parent DE As The Container DE
 
 #### :snowflake: Dockerfile
 ```text
 FROM ubuntu
-#Adding Neccessary Dependencies 
+MAINTAINER shraddhasaini99@gmail.com
 RUN apt-get update && apt-get install apt-transport-https ca-certificates  curl  gnupg-agent  software-properties-common -y
-#Adding Docker Official GPG Key
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-#Adding Repository Of Docker
 RUN add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-#Installing Docker
 RUN apt-get update && apt-get install docker-ce docker-ce-cli -y
 ```
 
@@ -112,11 +109,11 @@ RUN apt-get update && apt-get install docker-ce docker-ce-cli -y
 ```yaml
 version: '3.8'
 services:
- mydocker:
+ tasktwo:
   build: .
   tty: true
-  image: mydocker
-  container_name: dockercon
+  image: tasktwo
+  container_name: tasktwoc1
   volumes:
    - /var/run/docker.sock:/var/run/docker.sock
   network_mode: host
@@ -124,7 +121,7 @@ services:
 #### :fire: Fire it up and Migrate the database:
 ```shell
 $ docker-compose up --build -d
-$ docker-compose exec mydocker bash
+$ docker-compose exec tasktwo bash
 $ docker images
 $ docker ps -a
 ```
