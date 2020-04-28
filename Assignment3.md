@@ -159,3 +159,25 @@ $ docker build -t shraddhasaini/taskthree .
 $ docker push shraddhasaini/taskthree
 $ docker logs watchtower
 ```
+----------------------------------------------
+## :four: TASK #4:
+>To Run Root Commands By A Non-Root User In A Docker Container
+
+#### :snowflake: Dockerfile
+```text
+FROM ubuntu
+MAINTAINER shraddhasaini99@gmail.com
+RUN apt-get install sudo
+RUN adduser --disabled-password --gecos '' shraddha
+RUN adduser shraddha sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER shraddha
+RUN sudo apt-get update 
+```
+#### :snowflake: Shell
+```shell
+$ docker build -t taskfour .
+$ docker run -it --name taskfourc1 --network host taskfour
+$ whoami
+$ sudo apt-get install git
+```
