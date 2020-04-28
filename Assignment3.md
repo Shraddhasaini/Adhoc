@@ -128,4 +128,34 @@ $ docker ps -a
 ----------------------------------
 
 ## :three: TASK #3:
->
+> Automatically Update The Container Whenever The Image Update Occurs
+
+```shell
+$ sudo su
+$ mkdir taskthree && cd taskthree
+$ git clone https://github.com/microsoft/project-html-website.git
+$ mv project-html-website webapp
+$ atom Dockerfile
+```
+#### :snowflake: Dockerfile
+```text
+FROM httpd
+MAINTAINER shraddhasaini99@gmail.com
+COPY ./web/ /usr/local/apache2/htdocs/
+```
+#### :snowflake: Shell
+```shell
+$ docker build -t shraddhasaini/taskthree .
+$ docker login
+$ docker push shraddhasaini/taskthree
+$ docker run -itd --name autocont --network host shraddhasaini/taskthree
+```
+```shell
+$ docker run -d --name watchtower -v /var/run/docker.sock:/var/run/docker.sock v2tec/watchtower autocont
+$ cd webapp
+$ sed -i 's/Success/Failed/g' index.html
+$ cd ..
+$ docker build -t shraddhasaini/taskthree .
+$ docker push shraddhasaini/taskthree
+$ docker logs watchtower
+```
