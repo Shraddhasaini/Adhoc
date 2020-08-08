@@ -1,2 +1,2 @@
 
-Ad hoc
+Adhoc
